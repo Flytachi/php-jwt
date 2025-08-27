@@ -1,5 +1,5 @@
 {
-    "name": "flytachi/php-jwt",
+    "name": "flytachi/jwt",
     "description": "A modern, secure, and strictly-typed PHP library for encoding and decoding JSON Web Tokens (JWT) with JWK support.",
     "type": "library",
     "license": "MIT",
