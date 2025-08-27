@@ -1,0 +1,56 @@
+{
+    "name": "flytachi/jwt",
+    "description": "A modern, secure, and strictly-typed PHP library for encoding and decoding JSON Web Tokens (JWT) with JWK support.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "jwt",
+        "jwk",
+        "jwks",
+        "json web token",
+        "authentication",
+        "auth",
+        "security",
+        "token"
+    ],
+    "homepage": "https://github.com/flytachi/php-jwt",
+    "support": {
+        "issues": "https://github.com/flytachi/php-jwt/issues",
+        "source": "https://github.com/flytachi/php-jwt"
+    },
+    "authors": [
+        {
+            "name": "Flytachi",
+            "email": "jasur.rakhmatov03@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Flytachi\\Jwt\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Flytachi\\Jwt\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": ">=8.1",
+        "ext-openssl": "*",
+        "ext-json": "*"
+    },
+
+    "require-dev": {
+        "phpunit/phpunit": "^10.5",
+        "squizlabs/php_codesniffer": "^3.9"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": "phpunit tests",
+        "cs-check": "phpcs src --standard=PSR12",
+        "cs-fix": "phpcbf src --standard=PSR12"
+    }
+}
