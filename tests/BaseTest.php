@@ -17,7 +17,6 @@ class BaseTest extends TestCase
         ]), new PrivateKey('secret', 'HS256'));
 
         $payload = JWT::decode($jwtToken, [new PublicKey('secret', 'HS256')]);
-
         self::assertEquals($payload->getClaim('sub'), 'test');
     }
 }
